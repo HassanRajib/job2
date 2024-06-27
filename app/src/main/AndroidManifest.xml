@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Job2"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".addActivity"
             android:exported="false" />
         <activity
