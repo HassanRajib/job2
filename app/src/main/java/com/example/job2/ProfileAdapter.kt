@@ -16,8 +16,7 @@ class ProfileAdapter :ListAdapter<UserProfile, ProfileAdapter.ProfileViewHolder>
     private var onUpdateClickListener: ((UserProfile) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProfileViewHolder {
-        val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_profile, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_profile, parent, false)
         return ProfileViewHolder(itemView)
     }
 
@@ -48,7 +47,6 @@ class ProfileAdapter :ListAdapter<UserProfile, ProfileAdapter.ProfileViewHolder>
         private val udob: TextView = itemView.findViewById(R.id.doBtxt)
         private val udistrict: TextView = itemView.findViewById(R.id.diStxt)
         private val umobile: TextView = itemView.findViewById(R.id.moBtxt)
-
         private val deletbTn: ImageButton = itemView.findViewById(R.id.deleBtn)
         private val editbTn: ImageButton = itemView.findViewById(R.id.editBtn)
 
